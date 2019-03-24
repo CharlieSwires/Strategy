@@ -1,6 +1,6 @@
 
 public interface FlyBehaviour {
 
-	public void fly();
+	public String fly();
 	
 }

@@ -2,8 +2,8 @@
 public class Mute implements QuackBehaviour{
 
 	@Override
-	public void quack() {
-		
+	public String quack() {
+		return null;
 	}
 
 }

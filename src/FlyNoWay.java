@@ -2,9 +2,10 @@
 public class FlyNoWay implements FlyBehaviour{
 
 	@Override
-	public void fly() {
-		System.out.println("Can't fly!");
-		
+	public String fly() {
+		String result = "Can't fly!";
+		System.out.println(result);
+		return result;
 	}
 
 }

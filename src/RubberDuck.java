@@ -7,7 +7,9 @@ public class RubberDuck extends Duck {
 		super.setQuackBehaviour(new Squeak());
 	}
 
-	public void display() {
-		System.out.println("Rubber Duck");
+	public String display() {
+		String result = "Rubber Duck";
+		System.out.println(result);
+		return result;
 	}
 }

@@ -2,9 +2,10 @@
 public class FlyWithWings implements FlyBehaviour{
 
 	@Override
-	public void fly() {
-		System.out.println("Duck flying!");
-		
+	public String fly() {
+		String result = "Duck flying!";
+		System.out.println(result);
+		return result;
 	}
 
 }

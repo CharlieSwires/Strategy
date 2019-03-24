@@ -1,5 +1,5 @@
 
 public interface QuackBehaviour {
 
-	public void quack();
+	public String quack();
 }

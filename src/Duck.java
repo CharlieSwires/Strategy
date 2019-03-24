@@ -7,15 +7,15 @@ public class Duck {
 		System.out.println("Swim swim");
 		
 	}
-	public void display() {
+	public String display() {
+		return null;
+	}
+	public String performQuack() {
+		return quackBehaviour.quack();
 		
 	}
-	public void performQuack() {
-		quackBehaviour.quack();
-		
-	}
-	public void performFly() {
-		flyBehaviour.fly();
+	public String performFly() {
+		return flyBehaviour.fly();
 		
 	}
 	public void setFlyBehaviour(FlyBehaviour fb) {

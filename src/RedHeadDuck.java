@@ -6,7 +6,9 @@ public class RedHeadDuck extends Duck {
 		super.setFlyBehaviour(new FlyWithWings());
 		super.setQuackBehaviour(new Quack());
 	}
-	public void display() {
-		System.out.println("Read Head Duck");
+	public String display() {
+		String result = "Read Head Duck";
+		System.out.println(result);
+		return result;
 	}
 }

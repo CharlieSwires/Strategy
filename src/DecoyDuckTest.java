@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,9 +14,9 @@ class DecoyDuckTest {
 	void test() {
 		System.out.println("DecoyDuckTest");
 		Duck d = new DecoyDuck();
-		d.display();
-		d.performFly();
-		d.performQuack();
+		Assert.assertTrue("Decoy display", "Looks like a duck".equals(d.display()));
+		Assert.assertTrue("Decoy fly", "Can't fly!".equals(d.performFly()));
+		Assert.assertTrue("Decoy quack", null == d.performQuack());
 	}
 
 }

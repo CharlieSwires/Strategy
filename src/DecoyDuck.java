@@ -7,7 +7,9 @@ public class DecoyDuck extends Duck {
 		super.setQuackBehaviour(new Mute());
 	}
 
-	public void display() {
-		System.out.println("Looks like a duck");
+	public String display() {
+		String result = "Looks like a duck";
+		System.out.println(result);
+		return result;
 	}
 }

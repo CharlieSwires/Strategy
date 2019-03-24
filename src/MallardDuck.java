@@ -6,7 +6,9 @@ public class MallardDuck extends Duck {
 		super.setFlyBehaviour(new FlyWithWings());
 		super.setQuackBehaviour(new Quack());
 	}
-	public void display() {
-		System.out.println("Mallard duck");
+	public String display() {
+		String result = "Mallard duck";
+		System.out.println(result);
+		return result;
 	}
 }

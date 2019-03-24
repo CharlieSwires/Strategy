@@ -2,9 +2,10 @@
 public class Quack implements QuackBehaviour {
 
 	@Override
-	public void quack() {
-		System.out.println("Quack!");
-		
+	public String quack() {
+		String result = "Quack!";
+		System.out.println(result);
+		return result;
 	}
 
 }
