@@ -7,6 +7,7 @@ class Test {
 	MallardDuckTest mdt;
 	RedHeadDuckTest rhdt;
 	RubberDuckTest rdt;
+	TurkeyTest tt;
 	
 	@BeforeEach
 	void setUp() throws Exception {
@@ -14,6 +15,7 @@ class Test {
 		mdt = new MallardDuckTest();
 		rhdt = new RedHeadDuckTest();
 		rdt = new RubberDuckTest();	
+		tt = new TurkeyTest();
 	}
 
 	@org.junit.jupiter.api.Test
@@ -21,7 +23,8 @@ class Test {
 		ddt.test();
 		mdt.test();
 		rhdt.test();
-		rdt.test();			
+		rdt.test();		
+		tt.test();
 	}
 
 }
